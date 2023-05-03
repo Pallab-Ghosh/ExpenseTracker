@@ -3,6 +3,12 @@ import React from 'react'
 export const TransactionForm = () => {
   const [name,setname]=useState('')
   const [amt,setamt]=useState('')
+
+  const handle=(type,event)=>{
+   
+  
+  }
+  
   return (
     <div className='form1'>
     <h2>Add new Transaction</h2>
