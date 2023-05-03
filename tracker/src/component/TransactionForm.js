@@ -5,10 +5,15 @@ export const TransactionForm = () => {
   const [amt,setamt]=useState('')
 
   const handle=(type,event)=>{
-   
+    event.preventDefault()
+    if(!name && !amt)
+    {
+      alert('Please enter Information')
+    }
+  
   
   }
-  
+
   return (
     <div className='form1'>
     <h2>Add new Transaction</h2>
