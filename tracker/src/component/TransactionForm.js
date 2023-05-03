@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { uniqueId } from './utils'
 export const TransactionForm = () => {
   const [name,setname]=useState('')
   const [amt,setamt]=useState('')
@@ -10,7 +10,16 @@ export const TransactionForm = () => {
     {
       alert('Please enter Information')
     }
-  
+    
+    if(name && amt)
+    {
+      const current=new Date();
+      const date=`${current.getDate()}/${current.getMonth()+1}/${current.getFullYear()}`
+      const data={id:uniqueId(),name:name,amount:parseInt(amt),type:type,className:type=='income'?'income+':'expense-',datetime:date,}
+      handlenewtransaction(data)
+      setamt('')
+      setname('')
+    }
   
   }
 
