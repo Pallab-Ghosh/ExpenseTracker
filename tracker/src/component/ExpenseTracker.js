@@ -32,7 +32,7 @@ export const ExpenseTracker = () => {
 
 //useEffect for save in the local storage
 useEffect(()=>{
- 
+ console.log("called")
   let localdata=JSON.parse(localStorage.getItem('data'))
   if(localdata)
   {
@@ -49,6 +49,11 @@ const handlenewtransaction=(item)=>{
   settransactions(clone)
 }
 
+useEffect(()=>{
+  calculateexpenses()
+  
+ },[transactions])
+ 
 //handle_delete_transaction
 const handledeletetransaction=(id)=>{
   console.log("id--> ",id)
