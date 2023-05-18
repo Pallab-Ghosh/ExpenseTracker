@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { TransactionHistory } from './TransactionHistory'
 import Expense from './Expense'
 import { TransactionForm } from './TransactionForm'
-
+import { useEffect } from 'react'
 const transactionData=[]
 export const ExpenseTracker = () => {
   const [income,setincome]=useState(0)
@@ -29,6 +29,18 @@ export const ExpenseTracker = () => {
  setincome(income)
  setexpense(expense)
 }
+
+//useEffect for save in the local storage
+useEffect(()=>{
+ 
+  let localdata=JSON.parse(localStorage.getItem('data'))
+  if(localdata)
+  {
+    console.log('localdata',localdata)
+    settransactions(localdata)
+  }
+},[])
+
 //handle_new_transaction
 const handlenewtransaction=(item)=>{
   
