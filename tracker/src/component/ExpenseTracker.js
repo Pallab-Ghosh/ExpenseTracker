@@ -1,5 +1,8 @@
 import React from 'react'
-
+import { useState } from 'react'
+import { TransactionHistory } from './TransactionHistory'
+import Expense from './Expense'
+import { TransactionForm } from './TransactionForm'
 
 const transactionData=[]
 export const ExpenseTracker = () => {
@@ -45,6 +48,11 @@ const handledeletetransaction=(id)=>{
  
 
   return (
-    <div>ExpenseTracker</div>
+    <div>
+    <h1 className='et'>ExpenseTracker</h1>
+      <Expense income={income} expense={expense}/>
+      <TransactionHistory transactions={transactions} onDeletetransaction={handledeletetransaction} />
+      <TransactionForm handlenewtransaction={handlenewtransaction}/>
+    </div>
   )
 }
