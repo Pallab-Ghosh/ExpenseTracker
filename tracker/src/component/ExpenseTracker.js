@@ -26,7 +26,23 @@ export const ExpenseTracker = () => {
  setincome(income)
  setexpense(expense)
 }
+//handle_new_transaction
+const handlenewtransaction=(item)=>{
+  
+  let clone=[...transactions,item]
+   
+  settransactions(clone)
+}
 
+//handle_delete_transaction
+const handledeletetransaction=(id)=>{
+  console.log("id--> ",id)
+   const newtrans=transactions.filter((item)=>{
+     return item.id!=id
+   });
+   settransactions(newtrans)
+}
+ 
 
   return (
     <div>ExpenseTracker</div>
