@@ -102,3 +102,39 @@ background-color:aliceblue
       display: inline-block;
       margin-right: 10px;
   }
+
+   .transaction-form {
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .transaction-form input {
+      width: 97%;
+      height: 25px;
+  }
+  
+  .transaction-form label {
+      margin-bottom: 10px;
+  }
+  
+  .transaction-form button {
+      height: 30px;
+      margin-bottom: 5px;
+      border: none;
+      text-transform: uppercase;
+      font-size: 15px;
+      color: white;
+      width: 100%;
+  }
+  
+  .income-btn {
+      background-color: var(--income);
+  }
+  
+  .expense-btn {
+      background-color: var(--expense);
+  }
+
+  .form1{
+    background-color: seashell;
+  }
