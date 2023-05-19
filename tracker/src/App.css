@@ -31,3 +31,51 @@ background-color:aliceblue
     justify-content: center;
     justify-items: center;
 }
+.balance-val {
+  font-size: 30px;
+  color: orange;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.col h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.row-expense {
+  box-shadow: var(--box-shadow);
+  margin-top: 20px;
+  width: 240px;
+}
+
+.col-income, .col-expense {
+  padding: 20px;
+}
+
+.col-expense {
+  padding-left: 10px;
+}
+
+.col-income span {
+  display: inline-block;
+  border-right: 1px solid #ccc;
+  padding-right: 30px;
+}
+
+.income-text {
+  color: var(--income);
+}
+
+.expense-text {
+  color: var(--expense);
+}
