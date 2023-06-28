@@ -53,13 +53,21 @@ When page refresh the data is wiped out.So use local storage of the browser.Save
 
 ## Screenshots
 
-![App Screenshot]
-"C:\Users\HP\OneDrive\Pictures\Screenshots\tracker.png"
-## 🛠 Skills
+<img width="670" alt="tracker" src="https://github.com/Pallab-Ghosh/ExpenseTracker/assets/126455845/7b7954b2-d864-4248-a4d7-64d4a8e369be">
+
+
+
+
+## 🛠 Skills!
+
 Javascript, HTML, CSS ,Reactjs,Nodejs,Expressjs,Mongodb
 
 
 
+Project Demo
 
-https://github.com/Pallab-Ghosh/ExpenseTracker/assets/126455845/9f85c802-642e-4094-b59f-a55188961183
+
+https://github.com/Pallab-Ghosh/ExpenseTracker/assets/126455845/cc5c22c0-04cb-40da-a48c-e324d32808ba
+
+
 
